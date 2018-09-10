@@ -1,6 +1,9 @@
-launch.json
+# project
 .classpath
 .settings
 .project
 
 target
+
+# editor
+.vscode
