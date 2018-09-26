@@ -17,7 +17,7 @@ public class AskForLeaveChainProvider extends HandlerChainProvider {
         ExecutiveManager executiveManager = new ExecutiveManager();
         
         groupLeader.setNextHandler(humanResource);
-        executiveManager.setNextHandler(executiveManager);
+        humanResource.setNextHandler(executiveManager);
 
         this.manager = groupLeader;
     }
