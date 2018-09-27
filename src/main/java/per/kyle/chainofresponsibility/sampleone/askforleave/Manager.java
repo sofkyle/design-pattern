@@ -30,7 +30,7 @@ public abstract class Manager implements IHandler {
     /**
      * 是否有上级
      */
-    public boolean hasSuperior() {
+    public boolean haveNextHandler() {
         return superior != null;
     }
 }

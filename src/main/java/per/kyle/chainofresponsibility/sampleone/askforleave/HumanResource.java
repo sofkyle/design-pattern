@@ -14,7 +14,7 @@ public class HumanResource extends Manager {
             if (askForLeaveRequest.getDayOfAskForLeave() < 7) {
                 System.out.println("人力资源审批通过");
             } else {
-                if (hasSuperior()) {
+                if (haveNextHandler()) {
                     nextHandler().handleRequest(handlerRequest);
                 }
             }

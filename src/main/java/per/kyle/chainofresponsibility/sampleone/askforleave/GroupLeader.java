@@ -15,7 +15,7 @@ public class GroupLeader extends Manager {
             if (askForLeaveRequest.getDayOfAskForLeave() < 3) {
                 System.out.println("小组领导审批通过");
             } else {
-                if (hasSuperior()) {
+                if (haveNextHandler()) {
                     nextHandler().handleRequest(handlerRequest);
                 }
             }
