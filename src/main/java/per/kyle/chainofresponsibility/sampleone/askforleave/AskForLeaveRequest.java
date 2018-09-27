@@ -1,11 +1,11 @@
 package per.kyle.chainofresponsibility.sampleone.askforleave;
 
-import per.kyle.chainofresponsibility.sampleone.corbase.HandlerRequest;
+import per.kyle.chainofresponsibility.sampleone.corbase.AbstractHandleRequest;
 
 /**
  * AskForLeaveRequest
  */
-public class AskForLeaveRequest extends HandlerRequest {
+public class AskForLeaveRequest extends AbstractHandleRequest {
     private Integer dayOfAskForLeave;
 
     /**

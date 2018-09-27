@@ -2,28 +2,28 @@ package per.kyle.chainofresponsibility.sampleone.askforleave;
 
 import per.kyle.chainofresponsibility.sampleone.corbase.*;
 
-public abstract class Manager implements IHandler {
+public abstract class AbstractManager implements IHandler {
     /**
      * 上级
      */
-    private Manager superior;
+    private AbstractManager superior;
 
     /**
      * 处理请求
      */
-    public abstract void handleRequest(HandlerRequest handlerRequest);
+    public abstract void handleRequest(AbstractHandleRequest abstractHandleRequest);
 
     /**
      * 设定上级
      */
     public void setNextHandler(IHandler handler) {
-        superior = (Manager) handler;
+        superior = (AbstractManager) handler;
     }
 
     /**
      * 获取上级
      */
-    public Manager nextHandler() {
+    public AbstractManager nextHandler() {
         return superior;
     }
 

@@ -3,9 +3,9 @@ package per.kyle.chainofresponsibility.sampleone.corbase;
 public interface IHandler {
     /**
      * 处理请求
-     * @param handlerRequest
+     * @param abstractHandleRequest
      */
-    void handleRequest(HandlerRequest handlerRequest);
+    void handleRequest(AbstractHandleRequest abstractHandleRequest);
 
     /**
      * 设置下一处理单元

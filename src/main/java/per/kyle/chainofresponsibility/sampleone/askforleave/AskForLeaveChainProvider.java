@@ -1,14 +1,13 @@
 package per.kyle.chainofresponsibility.sampleone.askforleave;
 
-import per.kyle.chainofresponsibility.sampleone.corbase.HandlerChainProvider;
-import per.kyle.chainofresponsibility.sampleone.corbase.HandlerRequest;
+import per.kyle.chainofresponsibility.sampleone.corbase.*;
 
 /**
  * AskForLeaveChainProvider
  */
-public class AskForLeaveChainProvider extends HandlerChainProvider {
+public class AskForLeaveChainProvider extends AbstractHandleChainProvider {
 
-    private Manager manager;
+    private AbstractManager manager;
 
     @Override
     public void configHandlerChain() {
@@ -23,9 +22,9 @@ public class AskForLeaveChainProvider extends HandlerChainProvider {
     }
 
     @Override
-    public void start(HandlerRequest handlerRequest) {
+    public void start(AbstractHandleRequest handleRequest) {
 		if (manager != null) {
-            this.manager.handleRequest(handlerRequest);
+            this.manager.handleRequest(handleRequest);
         }
 	}
 

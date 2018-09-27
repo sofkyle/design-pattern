@@ -1,6 +1,6 @@
 package per.kyle.chainofresponsibility.sampleone.corbase;
 
-public abstract class HandlerChainProvider {
+public abstract class AbstractHandleChainProvider {
 
     /**
      * 配置责任链
@@ -10,7 +10,7 @@ public abstract class HandlerChainProvider {
 
     /**
      * 开始处理请求
-     * @param handlerRequest
+     * @param abstractHandleRequest
      */
-    public abstract void start(HandlerRequest handlerRequest);
+    public abstract void start(AbstractHandleRequest abstractHandleRequest);
 }
