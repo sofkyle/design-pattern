@@ -9,7 +9,7 @@ public class Main {
         askForLeaveRequest.setDayOfAskForLeave(10);
 
         AskForLeaveChainProvider askForLeaveChainProvider = new AskForLeaveChainProvider();
-        askForLeaveChainProvider.configHandlerChain();
+        askForLeaveChainProvider.configHandleChain();
         askForLeaveChainProvider.start(askForLeaveRequest);
     }
 }

@@ -6,7 +6,7 @@ public abstract class AbstractHandleChainProvider {
      * 配置责任链
      * @return
      */
-    public abstract void configHandlerChain();
+    public abstract void configHandleChain();
 
     /**
      * 开始处理请求

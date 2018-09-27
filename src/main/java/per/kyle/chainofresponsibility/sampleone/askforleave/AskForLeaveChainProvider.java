@@ -10,7 +10,7 @@ public class AskForLeaveChainProvider extends AbstractHandleChainProvider {
     private AbstractManager manager;
 
     @Override
-    public void configHandlerChain() {
+    public void configHandleChain() {
         GroupLeader groupLeader = new GroupLeader();
         HumanResource humanResource = new HumanResource();
         ExecutiveManager executiveManager = new ExecutiveManager();
