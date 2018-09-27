@@ -2,7 +2,7 @@ package per.kyle.chainofresponsibility.sampleone.askforleave;
 
 import per.kyle.chainofresponsibility.sampleone.corbase.*;
 
-public abstract class AbstractManager implements IHandler {
+public abstract class AbstractManager implements Handler {
     /**
      * 上级
      */
@@ -16,7 +16,7 @@ public abstract class AbstractManager implements IHandler {
     /**
      * 设定上级
      */
-    public void setNextHandler(IHandler handler) {
+    public void setNextHandler(Handler handler) {
         superior = (AbstractManager) handler;
     }
 

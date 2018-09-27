@@ -1,6 +1,6 @@
 package per.kyle.chainofresponsibility.sampleone.corbase;
 
-public interface IHandler {
+public interface Handler {
     /**
      * 处理请求
      * @param abstractHandleRequest
@@ -11,12 +11,12 @@ public interface IHandler {
      * 设置下一处理单元
      * @param handler
      */
-    void setNextHandler(IHandler handler);
+    void setNextHandler(Handler handler);
 
     /**
      * 获得下一处理单元
      */
-    IHandler nextHandler();
+    Handler nextHandler();
 
     /**
      * 判断是否有下一处理单元
