@@ -1,5 +1,5 @@
 package per.kyle.proxy._static;
 
-public class StaticProxyPattern {
+public class StaticSample {
     
 }
