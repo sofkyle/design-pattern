@@ -1,6 +1,5 @@
 package per.kyle.proxy.cglib;
 
-import java.awt.image.SampleModel;
 import java.lang.reflect.Method;
 
 import net.sf.cglib.proxy.Enhancer;
